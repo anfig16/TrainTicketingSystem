@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Available Routes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<h1>Train Ticket Reservation</h1>
+	<div class="topnav">
+		<div class="pixel" style="--i:0;"></div>
+  		<div class="pixel" style="--i:1;"></div>
+  		<div class="pixel" style="--i:2;"></div>
+  		<div class="pixel" style="--i:3;"></div>
+  		<div class="pixel" style="--i:4;"></div>
+  		
+		<div class="nav-links">
+			<button class="nav-btn" id="Routes">Routes</button>
+			<button class="nav-btn" id="Tickets">My Tickets</button>
+		</div>
+		<button id="logout-button">Logout</button>
+	</div>
+	
+	<div id="greeting" class="greeting"></div>
+	
+	<div class="search-bar">
+      <input type="text" id="search-start" placeholder="Start Destination">
+      <input type="text" id="search-end" placeholder="End Destination">
+      <input type="date" id="search-date" placeholder="YYYY-MM-DD">
+    </div>
+	
+	<div id="routes-container" class="routes-container">
+  	</div>
+	
+	
+	<script src="/js/home.js"></script>
+</body>
+</html>

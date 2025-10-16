@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Train Ticket Reservation Website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<h1>Train Ticket Reservation</h1>
+	<div class="topnav">
+		<div class="pixel" style="--i:0;"></div>
+  		<div class="pixel" style="--i:1;"></div>
+  		<div class="pixel" style="--i:2;"></div>
+  		<div class="pixel" style="--i:3;"></div>
+  		<div class="pixel" style="--i:4;"></div>
+  		
+		<div class="nav-links">
+		</div>
+		<button id="logout-button">Logout</button>
+	</div>
+
+	<div class="flex-container">
+		<div id=background-signup>
+			<div id="error-message">
+				<p id="error-text"></p>
+			</div>
+
+			<div class="signup-container">
+				<div class="signup-form">
+				
+					<div class="signup-login-slider">
+						<button class="signup-slider" id="signup-slider">
+							<h2>Sign Up</h2>
+						</button>
+						<button class="login-slider" id="login-slider">
+							<h2>Login</h2>
+						</button>
+					</div>
+
+					<br><br>
+					<form id="signup-form-inner">
+					
+						<div class="form-group">
+							<input type="text" id="name" name="name" placeholder="Full Name"
+								required>
+						</div>
+						<div class="form-group">
+							<input type="email" id="email" name="email" placeholder="Email"
+								required>
+						</div>
+						<div class="form-group">
+							<input type="phone" id="phone" name="phone" placeholder="Phone Number"
+								required>
+						</div>
+						<div class="form-group">
+							<input type="password" id="password" name="password"
+								placeholder="Password" required>
+						</div>
+						<button type="submit" class="signup-button" id="signup-button">Sign
+							Up</button>
+					
+					</form>
+					
+					<form id="login-form-inner">
+						<div class="form-group">
+							<input type="email" id="email-login" name="email-login"
+								placeholder="Email" required>
+						</div>
+						<div class="form-group">
+							<input type="password" id="password-login" name="password-login"
+								placeholder="Password" required>
+						</div>
+						<button type="submit" class="login-button" id="login-button">Login</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="/js/login.js"></script>
+	</div>
+
+</body>
+</html>

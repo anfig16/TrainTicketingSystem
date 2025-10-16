@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>My Tickets</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="tickets-page">
+
+	<h1>Train Ticket Reservation</h1>
+	<div class="topnav">
+		<div class="pixel" style="--i:0;"></div>
+  		<div class="pixel" style="--i:1;"></div>
+  		<div class="pixel" style="--i:2;"></div>
+  		<div class="pixel" style="--i:3;"></div>
+  		<div class="pixel" style="--i:4;"></div>
+  		
+		<div class="nav-links">
+			<button class="nav-btn" id="Routes">Routes</button>
+			<button class="nav-btn" id="Tickets">My Tickets</button>
+		</div>
+		<button id="logout-button">Logout</button>
+	</div>
+	
+	<h1 id="tickets-header">My Tickets</h1>
+    <div id="tickets-container"></div>
+	
+	<script src="/js/tickets.js"></script>
+</body>
+</html>
