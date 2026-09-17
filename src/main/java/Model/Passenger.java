@@ -7,7 +7,7 @@ import jakarta.persistence.*;
  * Represents a passenger with an auto-generated ID, name, email, and phone number.
  */
 @Entity
-@Table(name = "Passenger")   // Specifies the table name in the database
+@Table(name = "passenger")   // Specifies the table name in the database
 public class Passenger {
 
     @Id
