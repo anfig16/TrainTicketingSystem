@@ -1,0 +1,15 @@
+name: Keep Aiven MySQL Alive
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # runs every 6 hours
+  workflow_dispatch:      
+
+jobs:
+  ping-database:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install MySQL client
+        run: sudo apt-get update && sudo apt-get install -y mysql-client
+      - name: Ping Aiven MySQL
+        run: mysql --host=${{ secrets.DB_HOST }} --port=${{ secrets.DB_PORT }} --user=${{ secrets.DB_USER }} --password=${{ secrets.DB_PASSWORD }} -e "SELECT 1;
