@@ -12,4 +12,4 @@ jobs:
       - name: Install MySQL client
         run: sudo apt-get update && sudo apt-get install -y mysql-client
       - name: Ping Aiven MySQL
-        run: mysql --host=${{ secrets.DB_HOST }} --port=${{ secrets.DB_PORT }} --user=${{ secrets.DB_USER }} --password=${{ secrets.DB_PASSWORD }} -e "SELECT 1;
+        run: mysql --host=${{ secrets.DB_HOST }} --port=${{ secrets.DB_PORT }} --user=${{ secrets.DB_USER }} --password=${{ secrets.DB_PASSWORD }} -e "SELECT 1;"
